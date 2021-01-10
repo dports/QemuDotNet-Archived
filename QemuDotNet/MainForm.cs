@@ -52,7 +52,7 @@ namespace QemuDotNet
 		private void ButtonBrowseHDA_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Select Harddisk Image";
-			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.raw;*.img|All Files | *.*";
+			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.qcow2;*.raw;*.img|All Files | *.*";
 			bool flag = this.openFile.ShowDialog() == DialogResult.OK;
 			if (flag)
 			{
@@ -63,7 +63,7 @@ namespace QemuDotNet
 		private void ButtonBrowseHDB_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Select Harddisk Image";
-			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.raw;*.img|All Files | *.*";
+			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.qcow2;*.raw;*.img|All Files | *.*";
 			bool flag = this.openFile.ShowDialog() == DialogResult.OK;
 			if (flag)
 			{
@@ -74,7 +74,7 @@ namespace QemuDotNet
 		private void ButtonBrowseHDC_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Select Harddisk Image";
-			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.raw;*.img|All Files | *.*";
+			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.qcow2;*.raw;*.img|All Files | *.*";
 			bool flag = this.openFile.ShowDialog() == DialogResult.OK;
 			if (flag)
 			{
@@ -85,7 +85,7 @@ namespace QemuDotNet
 		private void ButtonBrowseHDD_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Select Harddisk Image";
-			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.raw;*.img|All Files | *.*";
+			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.qcow2;*.raw;*.img|All Files | *.*";
 			bool flag = this.openFile.ShowDialog() == DialogResult.OK;
 			if (flag)
 			{
@@ -524,7 +524,7 @@ namespace QemuDotNet
 		private void ButtonVDKImage_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Virtual Hardisk Image";
-			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.raw;*.img|All Files | *.*";
+			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.qcow2;*.raw;*.img|All Files | *.*";
 			bool flag = this.openFile.ShowDialog() == DialogResult.OK;
 			if (flag)
 			{
@@ -601,7 +601,7 @@ namespace QemuDotNet
 		private void ButtonCreateImage_Click(object sender, EventArgs e)
 		{
 			this.saveFileDialog.Title = "Create a virtual Hardisk";
-			this.saveFileDialog.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.raw;*.img|All Files | *.*";
+			this.saveFileDialog.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.qcow2;*.raw;*.img|All Files | *.*";
 			this.saveFileDialog.FileName = "image." + this.cboImageFormat.Text;
 			this.saveFileDialog.DefaultExt = this.cboImageFormat.Text;
 			bool flag = this.saveFileDialog.ShowDialog() == DialogResult.OK;

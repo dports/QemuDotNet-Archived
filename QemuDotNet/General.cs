@@ -16,7 +16,7 @@ namespace QemuDotNet
 			bool setClock = this.SetClock;
 			if (setClock)
 			{
-				buffer += "-localtime ";
+				buffer += "-rtc base=localtime ";
 			}
 			bool vga = this.VGA;
 			if (vga)

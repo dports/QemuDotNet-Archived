@@ -18,7 +18,7 @@ namespace QemuDotNet
 		{
 			return string.Concat(new string[]
 			{
-				"-net user,vlan=",
+				"-net user,-net vlan=",
 				this.vlan.ToString(),
 				",hostname=",
 				this.hostname,

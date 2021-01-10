@@ -964,8 +964,9 @@ namespace QemuDotNet
 				"cloop",
 				"cow",
 				"qcow",
+				"qcow2",
 				"raw",
-				"vmdk"
+				"vmdk",
 			});
 			this.cboImageFormat.Location = new global::System.Drawing.Point(264, 25);
 			this.cboImageFormat.Name = "cboImageFormat";
