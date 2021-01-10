@@ -2,7 +2,22 @@
 <div align="left">
 <h1>QemuDotNet</h1>
 
-[![Github-CI](https://github.com/dports/QemuDotNet/workflows/CI/badge.svg)](https://github.com/dports/QemuDotNet/actions?query=workflow%3ACI)
+<p align="center">
+
+<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" >
+
+<img src="https://img.shields.io/github/stars/dports/QemuDotNet.svg?style=flat">
+
+<img src="https://img.shields.io/github/languages/top/dports/QemuDotNet.svg">
+
+<img src="https://img.shields.io/github/issues/dports/QemuDotNet.svg">
+
+<img src="https://img.shields.io/github/downloads/dports/QemuDotNet/total.svg">
+
+<!--[![Github-CI](https://github.com/dports/QemuDotNet/workflows/CI/badge.svg)](https://github.com/dports/QemuDotNet/actions?query=workflow%3ACI)-->
+
+</p>
+
 <h3>Multifork of many C# QEMU Managers</h3>
 </div>
 
@@ -18,22 +33,7 @@ QemuDotNet combines the best components from many QEMU Managers from the followi
 ## License
 License information can be found [here](https://raw.githubusercontent.com/dports/QemuDotNet/main/LICENSE).
 
-# Stonks
-<p align="center">
-
-<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" >
-
-<img src="https://img.shields.io/github/stars/dports/QemuDotNet.svg?style=flat">
-
-<img src="https://img.shields.io/github/languages/top/dports/QemuDotNet.svg">
-
-<img src="https://img.shields.io/github/issues/dports/QemuDotNet.svg">
-
-<img src="https://img.shields.io/github/downloads/dports/QemuDotNet/total.svg">
-
-</p>
-
 Made with <span style="color: #ff006e;">&#9829;</span> on Earth.
 
-# Contributors and other Credits...
+# Contributors and other credits...
 [DartPower](https://github.com/dartpower)  
