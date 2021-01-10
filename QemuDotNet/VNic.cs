@@ -22,7 +22,7 @@ namespace QemuDotNet
 			{
 				result = string.Concat(new string[]
 				{
-					"-net nic,-net vlan=",
+					"-nic -net vlan=",
 					this.vlan.ToString(),
 					",macaddr=",
 					this.macAddress,
@@ -35,7 +35,7 @@ namespace QemuDotNet
 			{
 				result = string.Concat(new string[]
 				{
-					"-net nic,-net vlan=",
+					"-nic -net vlan=",
 					this.vlan.ToString(),
 					",model=",
 					this._NicModel.ToString(),
