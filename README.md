@@ -16,6 +16,8 @@
 
 <!--[![Github-CI](https://github.com/dports/QemuDotNet/workflows/CI/badge.svg)](https://github.com/dports/QemuDotNet/actions?query=workflow%3ACI)-->
 
+Made with <span style="color: #ff006e; font-weight: bold;">Love</span> on Earth.
+
 </p>
 
 <h3>Multifork of many C# QEMU Managers</h3>
@@ -33,7 +35,5 @@ QemuDotNet combines the best components from many QEMU Managers from the followi
 ## License
 License information can be found [here](https://raw.githubusercontent.com/dports/QemuDotNet/main/LICENSE).
 
-Made with <span style="color: #ff006e;">&#9829;</span> on Earth.
-
-# Contributors and other credits...
+## Contributors and other credits...
 [DartPower](https://github.com/dartpower)  
