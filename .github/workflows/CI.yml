@@ -24,4 +24,4 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.2
       with:
-        path: \QemuDotNet\bin\Debug\net5.0-windows
+        path: D:\a\QemuDotNet\QemuDotNet\QemuDotNet\bin\Debug\net5.0-windows\
