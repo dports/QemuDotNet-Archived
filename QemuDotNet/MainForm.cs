@@ -785,10 +785,6 @@ namespace QemuDotNet
 			}
 		}
 
-		private const string strRegKey = "Software\\RosTE";
-
-		private const string strDefCon = "DefaultConfig";
-
 		private Runner runner;
 
 		private string currentDir = Directory.GetCurrentDirectory();
