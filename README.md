@@ -35,5 +35,9 @@ License information can be found [here](https://raw.githubusercontent.com/dports
 
 ## Contributors and other credits...
 [DartPower](https://github.com/dartpower)  
+[Magnus Olsen](mailto:greatlord@reactos.org)  
+[Christoph von Wittich](mailto:Christoph_vW@ReactOS.org)  
+[Samuel Serapión](mailto:samcharly@hotmail.com)  
+[Ged Murphy](mailto:gedmurphy@reactos.org)  
 
 Made with &#9829; on Earth.
