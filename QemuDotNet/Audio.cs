@@ -37,7 +37,7 @@ namespace QemuDotNet
 				{
 					buffer += "es1370,";
 				}
-				result = buffer.Substring(0, buffer.Length - 1) + " ";
+				result = buffer[0..^1] + " ";
 			}
 			return result;
 		}

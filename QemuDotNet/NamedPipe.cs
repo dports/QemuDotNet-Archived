@@ -185,7 +185,7 @@ namespace QemuDotNet
 		public bool Write(string str)
 		{
 			this.wCommand += str;
-			bool flag = str[str.Length - 1] == '\r';
+			bool flag = str[^1] == '\r';
 			if (flag)
 			{
 				this.cmdList.Add(this.wCommand);
@@ -201,8 +201,8 @@ namespace QemuDotNet
 
 		private string wCommand;
 
-		private List<string> cmdList;
+		private readonly List<string> cmdList;
 
-		private static ManualResetEvent newWriteData = new ManualResetEvent(false);
+		private static readonly ManualResetEvent newWriteData = new ManualResetEvent(false);
 	}
 }
