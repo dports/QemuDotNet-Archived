@@ -1,4 +1,6 @@
-﻿namespace QemuDotNet
+﻿using System.Runtime.InteropServices;
+
+namespace QemuDotNet
 {
 	public partial class MainForm : global::System.Windows.Forms.Form
 	{
@@ -274,7 +276,10 @@
 			this.setAsDefaultToolStripMenuItem.Name = "setAsDefaultToolStripMenuItem";
 			this.setAsDefaultToolStripMenuItem.Size = new global::System.Drawing.Size(155, 22);
 			this.setAsDefaultToolStripMenuItem.Text = "Set as default";
-			this.setAsDefaultToolStripMenuItem.Click += new global::System.EventHandler(this.SetAsDefaultToolStripMenuItem_Click);
+			if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+			{
+				this.setAsDefaultToolStripMenuItem.Click += new global::System.EventHandler(this.SetAsDefaultToolStripMenuItem_Click);
+			}
 			this.toolStripSeparator1.Name = "toolStripSeparator1";
 			this.toolStripSeparator1.Size = new global::System.Drawing.Size(152, 6);
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
