@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Runtime.InteropServices;
+using System.Runtime.Versioning;
 using System.Threading;
 using System.Windows.Forms;
 using System.Xml.Serialization;
@@ -39,7 +41,10 @@ namespace QemuDotNet
 			this.cboBootFrom.SelectedIndex = 1;
 			this.cboImageFormat.SelectedIndex = 4;
 			this.cboMachine.SelectedIndex = 0;
-			this.LoadDefaultConfig();
+			if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+			{
+				this.LoadDefaultConfig();
+			}
 			this.CheckBoxSerialToFile_CheckedChanged(null, null);
 			this.CheckBoxSerialToPipe_CheckedChanged(null, null);
 		}
@@ -320,6 +325,7 @@ namespace QemuDotNet
 			}
 		}
 
+		[SupportedOSPlatform("windows")]
 		private void LoadDefaultConfig()
 		{
 			bool bLoaded = false;
@@ -749,6 +755,7 @@ namespace QemuDotNet
 			Dlg.Show();
 		}
 
+		[SupportedOSPlatform("windows")]
 		private void SetAsDefaultToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Default config settings";
