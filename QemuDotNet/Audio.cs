@@ -16,28 +16,29 @@ namespace QemuDotNet
 			}
 			else
 			{
-				string buffer = "-soundhw ";
-				bool speaker = this.Speaker;
-				if (speaker)
-				{
-					buffer += "pcspk,";
-				}
+				string buffer = "";
+				string speakerSwitch = "";
 				bool soundblaster = this.Soundblaster;
 				if (soundblaster)
 				{
-					buffer += "sb16,";
+					buffer += " -device sb16 ";
 				}
 				bool opl = this.OPL2;
 				if (opl)
 				{
-					buffer += "adlib,";
+					buffer += " -device adlib ";
 				}
 				bool es = this.ES1370;
 				if (es)
 				{
-					buffer += "es1370,";
+					buffer += " -device es1370 ";
 				}
-				result = buffer[0..^1] + " ";
+				bool speaker = this.Speaker;
+				if (speaker)
+				{
+					speakerSwitch = ""; // " -machine pcspk-audiodev= ";
+				}
+				result = buffer[0..^1] + speakerSwitch + " ";
 			}
 			return result;
 		}

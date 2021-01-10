@@ -14,6 +14,7 @@ namespace QemuDotNet
 				bool flag = this.Image.Length > 0;
 				if (flag)
 				{
+					//buffer = "-drive format=raw,media=cdrom,readonly,file= \"" + this.Image + "\" ";
 					buffer = "-cdrom \"" + this.Image + "\" ";
 				}
 			}
