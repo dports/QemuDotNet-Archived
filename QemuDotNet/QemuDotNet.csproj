@@ -12,10 +12,6 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AboutForm.resources" />
-    <EmbeddedResource Include="DebugForm.resources" />
-    <EmbeddedResource Include="ErrorForm.resources" />
-    <EmbeddedResource Include="MainForm.resources" />
     <EmbeddedResource Include="Properties\Resources.resources" />
   </ItemGroup>
   <ItemGroup>
