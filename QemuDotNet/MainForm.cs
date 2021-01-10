@@ -787,7 +787,7 @@ namespace QemuDotNet
 
 		private Runner runner;
 
-		private string currentDir = Directory.GetCurrentDirectory();
+		private readonly string currentDir = Directory.GetCurrentDirectory();
 
 		private Data data = new Data();
 

@@ -287,11 +287,11 @@ namespace QemuDotNet
 			}
 		}
 
-		private Data data;
+		private readonly Data data;
 
 		private string ErrBuffer = "";
 
-		private Process p;
+		private readonly Process p;
 
 		private DebugForm output;
 
