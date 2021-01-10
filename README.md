@@ -16,7 +16,7 @@
 
 <!--[![Github-CI](https://github.com/dports/QemuDotNet/workflows/CI/badge.svg)](https://github.com/dports/QemuDotNet/actions?query=workflow%3ACI)-->
 
-Made with <span style="color: #ff006e; font-weight: bold;">Love</span> on Earth.
+Made with &#9829; on Earth.
 
 </p>
 
