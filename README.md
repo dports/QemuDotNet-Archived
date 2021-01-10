@@ -30,7 +30,7 @@ QemuDotNet combines the best components from many QEMU Managers from the followi
 * [CardinalQemu](https://github.com/ianmartinez/CardinalQemu)
 * [Windows98Launcher](https://github.com/SpeedStriker243/Windows98Launcher)
 
-Currently based only on [Qemu_GUI](https://github.com/reactos/Qemu_GUI), but we are planning to implement functions from other projects.
+Currently based only on [Qemu_GUI](https://github.com/reactos/Qemu_GUI), but we are planning to implement functions from other projects. Like adding/editing/removing machine configs and lot of settings.
 
 ## License
 License information can be found [here](https://raw.githubusercontent.com/dports/QemuDotNet/main/LICENSE).
