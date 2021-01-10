@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Runtime.Versioning;
 using System.Security.Permissions;
 using System.Security.Principal;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace QemuDotNet
@@ -159,13 +161,7 @@ namespace QemuDotNet
 
 		public bool MountImage()
 		{
-			WindowsPrincipal prin = new WindowsPrincipal(WindowsIdentity.GetCurrent());
-			PrincipalPermission perm = new PrincipalPermission(prin.Identity.ToString(), WindowsBuiltInRole.Administrator.ToString());
-			try
-			{
-				perm.Demand();
-			}
-			catch
+			if (Thread.CurrentPrincipal == null || !Thread.CurrentPrincipal.IsInRole("Administrators"))
 			{
 				MessageBox.Show("Request for Administrator privilages failed.\n VDK may not function.", "Info");
 			}
