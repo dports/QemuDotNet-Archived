@@ -16,8 +16,6 @@
 
 <!--[![Github-CI](https://github.com/dports/QemuDotNet/workflows/CI/badge.svg)](https://github.com/dports/QemuDotNet/actions?query=workflow%3ACI)-->
 
-Made with &#9829; on Earth.
-
 </p>
 
 <h3>Multifork of many C# QEMU Managers</h3>
@@ -37,3 +35,5 @@ License information can be found [here](https://raw.githubusercontent.com/dports
 
 ## Contributors and other credits...
 [DartPower](https://github.com/dartpower)  
+
+Made with &#9829; on Earth.
