@@ -19,7 +19,7 @@ namespace QemuDotNet
 			this.InitializeComponent();
 		}
 
-		private void frmMain_Load(object sender, EventArgs e)
+		private void FormMain_Load(object sender, EventArgs e)
 		{
 			ArrayList DriveLetters = new ArrayList();
 			for (int i = 100; i < 123; i++)
@@ -40,11 +40,11 @@ namespace QemuDotNet
 			this.cboImageFormat.SelectedIndex = 4;
 			this.cboMachine.SelectedIndex = 0;
 			this.LoadDefaultConfig();
-			this.chkSerialToFile_CheckedChanged(null, null);
-			this.chkSerialToPipe_CheckedChanged(null, null);
+			this.CheckBoxSerialToFile_CheckedChanged(null, null);
+			this.CheckBoxSerialToPipe_CheckedChanged(null, null);
 		}
 
-		private void btnBrowseHDA_Click(object sender, EventArgs e)
+		private void ButtonBrowseHDA_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Select Harddisk Image";
 			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.raw;*.img|All Files | *.*";
@@ -55,7 +55,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void btnBrowseHDB_Click(object sender, EventArgs e)
+		private void ButtonBrowseHDB_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Select Harddisk Image";
 			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.raw;*.img|All Files | *.*";
@@ -66,7 +66,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void btnBrowseHDC_Click(object sender, EventArgs e)
+		private void ButtonBrowseHDC_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Select Harddisk Image";
 			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.raw;*.img|All Files | *.*";
@@ -77,7 +77,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void btnBrowseHDD_Click(object sender, EventArgs e)
+		private void ButtonBrowseHDD_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Select Harddisk Image";
 			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.raw;*.img|All Files | *.*";
@@ -88,32 +88,32 @@ namespace QemuDotNet
 			}
 		}
 
-		private void chkUseHDA_CheckedChanged(object sender, EventArgs e)
+		private void CheckBoxUseHDA_CheckedChanged(object sender, EventArgs e)
 		{
 			this.btnBrowseHDA.Enabled = this.chkUseHDA.Checked;
 			this.txtHDA.Enabled = this.chkUseHDA.Checked;
 		}
 
-		private void chkUseHDB_CheckedChanged(object sender, EventArgs e)
+		private void CheckBoxUseHDB_CheckedChanged(object sender, EventArgs e)
 		{
 			this.btnBrowseHDB.Enabled = this.chkUseHDB.Checked;
 			this.txtHDB.Enabled = this.chkUseHDB.Checked;
 		}
 
-		private void chkUseHDC_CheckedChanged(object sender, EventArgs e)
+		private void CheckBoxUseHDC_CheckedChanged(object sender, EventArgs e)
 		{
 			this.btnBrowseHDC.Enabled = this.chkUseHDC.Checked;
 			this.txtHDC.Enabled = this.chkUseHDC.Checked;
 			this.txtHDC.Text = "";
 		}
 
-		private void chkUseHDD_CheckedChanged(object sender, EventArgs e)
+		private void CheckBoxUseHDD_CheckedChanged(object sender, EventArgs e)
 		{
 			this.btnBrowseHDD.Enabled = this.chkUseHDD.Checked;
 			this.txtHDD.Enabled = this.chkUseHDD.Checked;
 		}
 
-		private void btnBrowseCDROM_Click(object sender, EventArgs e)
+		private void ButtonBrowseCDROM_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Select CD-ROM image";
 			this.openFile.Filter = "CD-Images (*.iso)|*.iso";
@@ -124,7 +124,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void chkUseCDROM_CheckedChanged(object sender, EventArgs e)
+		private void CheckBoxUseCDROM_CheckedChanged(object sender, EventArgs e)
 		{
 			bool @checked = this.chkUseHDC.Checked;
 			if (@checked)
@@ -155,17 +155,17 @@ namespace QemuDotNet
 			}
 		}
 
-		private void optHostCDROM_CheckedChanged(object sender, EventArgs e)
+		private void OptionHostCDROM_CheckedChanged(object sender, EventArgs e)
 		{
 			this.txtCDROM.Enabled = false;
 		}
 
-		private void optCDImage_CheckedChanged(object sender, EventArgs e)
+		private void OptionCDImage_CheckedChanged(object sender, EventArgs e)
 		{
 			this.txtCDROM.Enabled = true;
 		}
 
-		private void chkSerialToScrn_CheckedChanged(object sender, EventArgs e)
+		private void CheckBoxSerialToScrn_CheckedChanged(object sender, EventArgs e)
 		{
 			bool @checked = this.chkSerialToScrn.Checked;
 			if (@checked)
@@ -192,7 +192,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void chkSerialToFile_CheckedChanged(object sender, EventArgs e)
+		private void CheckBoxSerialToFile_CheckedChanged(object sender, EventArgs e)
 		{
 			bool @checked = this.chkSerialToFile.Checked;
 			if (@checked)
@@ -217,7 +217,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void chkSerialToPipe_CheckedChanged(object sender, EventArgs e)
+		private void CheckBoxSerialToPipe_CheckedChanged(object sender, EventArgs e)
 		{
 			bool @checked = this.chkSerialToPipe.Checked;
 			if (@checked)
@@ -238,7 +238,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void btnBrowseSerial_Click(object sender, EventArgs e)
+		private void ButtonBrowseSerial_Click(object sender, EventArgs e)
 		{
 			this.saveFileDialog.Title = "Serial output to file";
 			this.saveFileDialog.FileName = "serial_ouput.txt";
@@ -250,31 +250,31 @@ namespace QemuDotNet
 			}
 		}
 
-		private void btnLoadVM_Click(object sender, EventArgs e)
+		private void ButtonLoadVM_Click(object sender, EventArgs e)
 		{
 			this.openFile.ShowDialog();
 			MainForm.saved_state = this.openFile.FileName;
 			this.data.Debug.EnableSavedState = true;
 		}
 
-		private void chkVNC_CheckedChanged(object sender, EventArgs e)
+		private void CheckBoxVNC_CheckedChanged(object sender, EventArgs e)
 		{
 			this.txtVNC.Enabled = this.chkVNC.Checked;
 		}
 
-		private void chkFloppyA_CheckedChanged(object sender, EventArgs e)
+		private void CheckBoxFloppyA_CheckedChanged(object sender, EventArgs e)
 		{
 			this.btnBrowseFloppyA.Enabled = this.chkFloppyA.Checked;
 			this.txtFloppyA.Enabled = this.chkFloppyA.Checked;
 		}
 
-		private void chkFloppyB_CheckedChanged(object sender, EventArgs e)
+		private void CheckBoxFloppyB_CheckedChanged(object sender, EventArgs e)
 		{
 			this.btnBrowseFloppyB.Enabled = this.chkFloppyB.Checked;
 			this.txtFloppyB.Enabled = this.chkFloppyB.Checked;
 		}
 
-		private void btnBrowseFloppyA_Click(object sender, EventArgs e)
+		private void ButtonBrowseFloppyA_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Browse for a floppy image";
 			this.openFile.Filter = "All Files | *.*";
@@ -285,7 +285,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void btnBrowseFloppyB_Click(object sender, EventArgs e)
+		private void ButtonBrowseFloppyB_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Browse for a floppy image";
 			this.openFile.Filter = "All Files | *.*";
@@ -296,7 +296,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void btnQEmuPath_Click(object sender, EventArgs e)
+		private void ButtonQEmuPath_Click(object sender, EventArgs e)
 		{
 			this.folderBrowserDialog1.Description = "Select Qemu path";
 			this.folderBrowserDialog1.ShowNewFolderButton = false;
@@ -308,7 +308,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void btnVDKBrowse_Click(object sender, EventArgs e)
+		private void ButtonVDKBrowse_Click(object sender, EventArgs e)
 		{
 			this.folderBrowserDialog1.Description = "Select VDK path";
 			this.folderBrowserDialog1.ShowNewFolderButton = false;
@@ -356,7 +356,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void btnSave_Click(object sender, EventArgs e)
+		private void ButtonSave_Click(object sender, EventArgs e)
 		{
 			this.SaveSettings();
 			this.saveFileDialog.Title = "Save settings";
@@ -440,7 +440,7 @@ namespace QemuDotNet
 			this.chkSerialToPipe.Checked = this.data.Debug.SerialPort.PRedirect;
 			this.txtSerialPipe.Text = this.data.Debug.SerialPort.PipeName;
 			this.chkSerialToScrn.Checked = this.data.Debug.SerialPort.SRedirect;
-			this.chkSerialToFile_CheckedChanged(null, null);
+			this.CheckBoxSerialToFile_CheckedChanged(null, null);
 			MainForm.saved_state = this.data.Debug.SavedStatePath;
 			this.chkVBE30.Checked = this.data.Debug.VBE3;
 			this.txtGDBPort.Text = this.data.Debug.GDBPort.ToString();
@@ -515,7 +515,7 @@ namespace QemuDotNet
 			this.data.Other.AppendCmdLine = this.txtAppendCmd.Text;
 		}
 
-		private void btnVDKImage_Click(object sender, EventArgs e)
+		private void ButtonVDKImage_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Virtual Hardisk Image";
 			this.openFile.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.raw;*.img|All Files | *.*";
@@ -527,12 +527,12 @@ namespace QemuDotNet
 			}
 		}
 
-		private void cboVDKDrive_SelectedIndexChanged(object sender, EventArgs e)
+		private void DropDownListVDKDrive_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			this.data.Tools.vdk.DriveLetter = this.cboVDKDrive.SelectedItem.ToString();
 		}
 
-		private void btnUnmount_Click(object sender, EventArgs e)
+		private void ButtonUnmount_Click(object sender, EventArgs e)
 		{
 			this.data.Paths.VDK = this.txtVDKPath.Text;
 			bool flag = this.data.Paths.VDK == "";
@@ -543,7 +543,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void btnMount_Click(object sender, EventArgs e)
+		private void ButtonMount_Click(object sender, EventArgs e)
 		{
 			this.data.Tools.vdk.Image = this.txtVDKImage.Text;
 			this.data.Paths.VDK = this.txtVDKPath.Text;
@@ -574,25 +574,25 @@ namespace QemuDotNet
 			}
 		}
 
-		private void btnNetAdd_Click(object sender, EventArgs e)
+		private void ButtonNetAdd_Click(object sender, EventArgs e)
 		{
 		}
 
-		private void rbtnNetUser_CheckedChanged(object sender, EventArgs e)
+		private void RadioButtonNetUser_CheckedChanged(object sender, EventArgs e)
 		{
 			this.panelUser.Visible = this.rbtnNetUser.Checked;
 		}
 
-		private void rbtnNetNic_CheckedChanged(object sender, EventArgs e)
+		private void RadioButtonNetNic_CheckedChanged(object sender, EventArgs e)
 		{
 			this.panelNic.Visible = this.rbtnNetNic.Checked;
 		}
 
-		private void btnNetRemove_Click(object sender, EventArgs e)
+		private void ButtonNetRemove_Click(object sender, EventArgs e)
 		{
 		}
 
-		private void btnCreateImage_Click(object sender, EventArgs e)
+		private void ButtonCreateImage_Click(object sender, EventArgs e)
 		{
 			this.saveFileDialog.Title = "Create a virtual Hardisk";
 			this.saveFileDialog.Filter = "Harddisk images |*.vmdk;*.cloop;*.cow;*.qcow;*.raw;*.img|All Files | *.*";
@@ -611,7 +611,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void btnLaunch_Click(object sender, EventArgs e)
+		private void ButtonLaunch_Click(object sender, EventArgs e)
 		{
 			this.SaveSettings();
 			bool HasHDisk = false;
@@ -681,7 +681,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void loadConfigToolStripMenuItem_Click(object sender, EventArgs e)
+		private void LoadConfigToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Load settings";
 			this.openFile.InitialDirectory = this.currentDir;
@@ -711,7 +711,7 @@ namespace QemuDotNet
 			}
 		}
 
-		private void saveConfigToolStripMenuItem_Click(object sender, EventArgs e)
+		private void SaveConfigToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			this.SaveSettings();
 			this.saveFileDialog.Title = "Save settings";
@@ -739,17 +739,17 @@ namespace QemuDotNet
 			}
 		}
 
-		private void helpContentsToolStripMenuItem_Click(object sender, EventArgs e)
+		private void HelpContentsToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 		}
 
-		private void aboutReactOSQEmuManagerToolStripMenuItem_Click(object sender, EventArgs e)
+		private void AboutReactOSQEmuManagerToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			AboutForm Dlg = new AboutForm();
 			Dlg.Show();
 		}
 
-		private void setAsDefaultToolStripMenuItem_Click(object sender, EventArgs e)
+		private void SetAsDefaultToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			this.openFile.Title = "Default config settings";
 			this.openFile.InitialDirectory = this.currentDir;
@@ -769,12 +769,12 @@ namespace QemuDotNet
 			this.LoadDefaultConfig();
 		}
 
-		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+		private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			Application.Exit();
 		}
 
-		private void btnStop_Click(object sender, EventArgs e)
+		private void ButtonStop_Click(object sender, EventArgs e)
 		{
 			try
 			{
