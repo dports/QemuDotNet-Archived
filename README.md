@@ -18,7 +18,7 @@
 
 </p>
 
-<h2> ⚠️ Moved to https://github.com/dpteam/QemuDotNet ⚠️ </h2>
+<h2>⚠️ Moved to https://github.com/dpteam/QemuDotNet ⚠️</h2>
 
 <h3>Multifork of many C# QEMU Managers</h3>
 </div>
