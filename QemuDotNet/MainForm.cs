@@ -355,7 +355,7 @@ namespace QemuDotNet
 			if (flag3)
 			{
 				VNic nic = new VNic("", NicModel.ne2k_pci);
-				VUser use = new VUser("reactos", 0);
+				VUser use = new VUser("qemuputer", 0);
 				this.data.Network.AddNetString(nic.ToString() + use.ToString());
 				string[] lans = this.data.Network.GetNetStrings();
 				this.listVLANs.Items.Add(lans[0]);
@@ -749,7 +749,7 @@ namespace QemuDotNet
 		{
 		}
 
-		private void AboutReactOSQEmuManagerToolStripMenuItem_Click(object sender, EventArgs e)
+		private void AboutQemuDotNetQEmuManagerToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			AboutForm Dlg = new AboutForm();
 			Dlg.Show();

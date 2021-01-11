@@ -26,7 +26,7 @@ namespace QemuDotNet
 			this.helpToolStripMenuItem = new global::System.Windows.Forms.ToolStripMenuItem();
 			this.helpContentsToolStripMenuItem = new global::System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator3 = new global::System.Windows.Forms.ToolStripSeparator();
-			this.aboutReactOSQEmuManagerToolStripMenuItem = new global::System.Windows.Forms.ToolStripMenuItem();
+			this.aboutQemuDotNetQEmuManagerToolStripMenuItem = new global::System.Windows.Forms.ToolStripMenuItem();
 			this.btnStop = new global::System.Windows.Forms.Button();
 			this.btnLaunch = new global::System.Windows.Forms.Button();
 			this.tabDebug = new global::System.Windows.Forms.TabPage();
@@ -290,7 +290,7 @@ namespace QemuDotNet
 			{
 				this.helpContentsToolStripMenuItem,
 				this.toolStripSeparator3,
-				this.aboutReactOSQEmuManagerToolStripMenuItem
+				this.aboutQemuDotNetQEmuManagerToolStripMenuItem
 			});
 			this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
 			this.helpToolStripMenuItem.Size = new global::System.Drawing.Size(47, 21);
@@ -301,10 +301,10 @@ namespace QemuDotNet
 			this.helpContentsToolStripMenuItem.Click += new global::System.EventHandler(this.HelpContentsToolStripMenuItem_Click);
 			this.toolStripSeparator3.Name = "toolStripSeparator3";
 			this.toolStripSeparator3.Size = new global::System.Drawing.Size(257, 6);
-			this.aboutReactOSQEmuManagerToolStripMenuItem.Name = "aboutReactOSQEmuManagerToolStripMenuItem";
-			this.aboutReactOSQEmuManagerToolStripMenuItem.Size = new global::System.Drawing.Size(260, 22);
-			this.aboutReactOSQEmuManagerToolStripMenuItem.Text = "About ReactOS QEmu Manager";
-			this.aboutReactOSQEmuManagerToolStripMenuItem.Click += new global::System.EventHandler(this.AboutReactOSQEmuManagerToolStripMenuItem_Click);
+			this.aboutQemuDotNetQEmuManagerToolStripMenuItem.Name = "aboutQemuDotNetQEmuManagerToolStripMenuItem";
+			this.aboutQemuDotNetQEmuManagerToolStripMenuItem.Size = new global::System.Drawing.Size(260, 22);
+			this.aboutQemuDotNetQEmuManagerToolStripMenuItem.Text = "About QemuDotNet";
+			this.aboutQemuDotNetQEmuManagerToolStripMenuItem.Click += new global::System.EventHandler(this.AboutQemuDotNetQEmuManagerToolStripMenuItem_Click);
 			this.btnStop.Image = global::QemuDotNet.Properties.Resources.stop;
 			this.btnStop.ImageAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnStop.Location = new global::System.Drawing.Point(79, 28);
@@ -1489,7 +1489,7 @@ namespace QemuDotNet
 			base.MaximizeBox = false;
 			base.Name = "MainForm";
 			base.SizeGripStyle = global::System.Windows.Forms.SizeGripStyle.Hide;
-			this.Text = "ReactOS Qemu GUI";
+			this.Text = "QemuDotNet";
 			base.Load += new global::System.EventHandler(this.FormMain_Load);
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
@@ -1596,7 +1596,7 @@ namespace QemuDotNet
 
 		private global::System.Windows.Forms.ToolStripMenuItem helpContentsToolStripMenuItem;
 
-		private global::System.Windows.Forms.ToolStripMenuItem aboutReactOSQEmuManagerToolStripMenuItem;
+		private global::System.Windows.Forms.ToolStripMenuItem aboutQemuDotNetQEmuManagerToolStripMenuItem;
 
 		private global::System.Windows.Forms.ToolStripMenuItem loadConfigToolStripMenuItem;
 
